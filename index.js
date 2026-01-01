@@ -55,7 +55,7 @@ console.log(p1);
 console.log(p2);
 
 const person1 = {
-    fname : "Anu" , 
+    fname : "Anurima" , 
     lname : "G" , 
     city : "Howrah",
     full_name : function(){
@@ -65,6 +65,11 @@ const person1 = {
 person1.eye = "beautiful"
 let x = person1.full_name 
 console.log(x)
-// console.log(person1.full_name())
-// delete person1.lname ;
-// console.log(person1)
+console.log(person1.full_name())
+//delete person1.lname ;
+console.log(person1)
+
+person1.y = function(){
+    return (this.fname + " " + person1.lname).toUpperCase() ;
+}
+console.log(person1.y())
